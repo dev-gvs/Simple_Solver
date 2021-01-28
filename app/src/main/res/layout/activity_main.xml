@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/image_description"
+        app:srcCompat="@drawable/sample" />
+
+    <TextView
+        android:id="@+id/textViewY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="casual"
+        android:text="@string/text_view_y_hint"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/editTextNumberX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/edit_text_x_hint"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/editTextNumberA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/edit_text_a_hint"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/editTextNumberB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/edit_text_b_hint"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/editTextNumberC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/edit_text_c_hint"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSolve"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="casual"
+            android:onClick="onButtonSolveClick"
+            android:text="@string/button_solve_text"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="casual"
+            android:onClick="onButtonClearClick"
+            android:text="@string/button_clear_text"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</LinearLayout>
