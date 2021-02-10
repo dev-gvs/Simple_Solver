@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:stretchColumns="*">
+
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="4"
+            android:contentDescription="@string/image_description"
+            app:srcCompat="@drawable/sample" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textViewY"
+            android:layout_gravity="center_horizontal"
+            android:layout_span="4"
+            android:fontFamily="casual"
+            android:text="@string/text_view_y_hint"
+            android:textSize="36sp" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <EditText
+            android:id="@+id/editTextNumberX"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="casual"
+            android:hint="@string/edit_text_x_hint"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/editTextNumberA"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="casual"
+            android:hint="@string/edit_text_a_hint"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/editTextNumberB"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="casual"
+            android:hint="@string/edit_text_b_hint"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/editTextNumberC"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="casual"
+            android:hint="@string/edit_text_c_hint"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textSize="36sp" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/buttonSolve"
+            android:layout_marginHorizontal="10dp"
+            android:layout_span="2"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="casual"
+            android:onClick="onButtonSolveClick"
+            android:text="@string/button_solve_text"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_marginHorizontal="10dp"
+            android:layout_span="2"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="casual"
+            android:onClick="onButtonClearClick"
+            android:text="@string/button_clear_text"
+            android:textSize="24sp" />
+    </TableRow>
+
+</TableLayout>
