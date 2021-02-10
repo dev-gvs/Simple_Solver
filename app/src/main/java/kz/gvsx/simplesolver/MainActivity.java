@@ -8,6 +8,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity {
 
     TextView textViewY;
@@ -26,6 +28,15 @@ public class MainActivity extends AppCompatActivity {
         numberA = findViewById(R.id.editTextNumberA);
         numberB = findViewById(R.id.editTextNumberB);
         numberC = findViewById(R.id.editTextNumberC);
+
+        if (savedInstanceState != null) {
+            textViewY.setText(savedInstanceState.getString("y"));
+        }
+    }
+
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("y", textViewY.getText().toString());
     }
 
     public void onButtonSolveClick(View view) {
@@ -43,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
                 y = (x * x * x) * (a - b);
             }
 
-            textViewY.setText("y = " + y);
+            DecimalFormat df = new DecimalFormat("#.##");
+            textViewY.setText("y = " + df.format(y));
         } catch (Exception e) {
             Toast.makeText(this, "Неверные данные", Toast.LENGTH_LONG).show();
         }
